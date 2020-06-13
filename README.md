@@ -4,7 +4,7 @@ https://ikaros-521.gitee.io/boa_cgi_html_mysql/login.html
 
 使用到的软件和技术
 
-	BOA服务器，Apache，CGI，CCGI，MySQL，SQLite。C，HTML，CSS，JS，SQL
+	BOA服务器，CGI，CCGI，MySQL，SQLite。C，HTML，CSS，JS，SQL
 	
 具体功能讲解
 
@@ -24,7 +24,7 @@ ajax局部刷新，这个demo链接在这 [https://gitee.com/ikaros-521/ajax_cgi
 
 操作系统： Ubuntu12.04 LTS
 
-环境搭建： 需要 [BOA](http://www.boa.org/)，Apache，CCGI，MySQL，GCC
+环境搭建： 需要 [BOA](http://www.boa.org/)，CCGI，MySQL，GCC
 
 [Linux下嵌入式Web服务器BOA和CGI编程开发](https://blog.csdn.net/Ikaros_521/article/details/102610768)
 
