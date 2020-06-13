@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "cgic.h"
 #include <string.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -8,6 +7,7 @@
 #include <fcntl.h>
 #include <mysql/mysql.h>
 #include <stdbool.h>
+#include "cgic.h"
 
 #define SQL_SIZE 256 
 
