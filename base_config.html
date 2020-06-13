@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>config</title>
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<script src="js/bootstrap.min.js"></script>
+<script src="js/my.js"></script>
+<link type="text/css" href="css/config.css" rel="stylesheet">
+
+</head>
+<body>
+<div id="head">
+	<div class="banner">
+        <div class="nav">
+       	    <ul class = "box">
+				<li><a href="#"><h3>logo</h3></a></li>
+            	<li><a href="#"><h3>首页</h3></a></li>
+				<li><a href="#"><h3>系统设置</h3></a></li>
+				<li><a href="ajax.html"><h3>Ajax</h3></a></li>
+				<li><a href="login.html"><h3>切换帐号</h3></a></li>
+				<li><a href="login.html"><h3>退出</h3></a></li>
+            </ul>
+        </div>
+    </div>
+</div>	
+<br>
+<div id="center">
+	<div class="base_config">
+		<h1>常规设置</h1>
+		<form enctype="multipart/form-data" action="cgi-bin/base_config.cgi" method="post" class="form-horizontal" role="form">
+		<table  class="table">
+			<tr>
+				<td>
+				<div class="form-group" >
+					<label class="col-sm-2 control-label"><h5>*网关：</h5></label>					 
+					<input  class="form-control" name="gateway" id="focusedInput" type="text" value=" ">					
+				</div>
+				</td>
+				<td>
+				<div class="form-group">
+					<label class="col-sm-2 control-label"><h5>*服务器IP：</h5></label>				 
+					<input  class="form-control" name="server_ip" id="focusedInput" type="text" value=" ">					
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<div class="form-group" >
+					<label class="col-sm-2 control-label"><h5>*DNS：</h5></label>				 
+					<input  class="form-control" name="dns" id="focusedInput" type="text" value=" ">					
+				</div>
+				</td>
+				<td>
+				<div class="form-group">
+					<label class="col-sm-2 control-label"><h5>*子网掩码：</h5></label>				 
+					<input  class="form-control" name="subnet_mask" id="focusedInput" type="text" value=" ">
+				</div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+				<div class="form-group">
+					<label><h5>是否开启DHCP：</h5></label>
+					<label class="col-sm-2 control-label" id="radio_btn"><input name="dhcp" type="radio" value="是" />是 </label> 
+					<label class="col-sm-2 control-label" id="radio_btn"><input name="dhcp" type="radio" value="否" />否 </label> 
+				</div>
+				</td>
+				<td>
+				<div class="form-group">
+					<label><h5>是否自动上报异常：</h5></label>				
+					<label class="col-sm-2 control-label" id="radio_btn"><input name="error" type="radio" value="是" />是 </label> 
+					<label class="col-sm-2 control-label" id="radio_btn"><input name="error" type="radio" value="否" />否 </label> 				
+				</div>
+				</td>
+			</tr>
+		</table>
+		<div class="form-group">
+			<input  class="form-control" id="focusedInput" type="submit" value="提交">
+		</div>
+		</form>
+	</div>
+</div>	
+<div class="bottom">
+
+	<div class="footer">
+
+
+	</div>
+
+</div>
+</body>
+</html>
+

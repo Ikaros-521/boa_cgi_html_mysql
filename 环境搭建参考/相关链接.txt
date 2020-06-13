@@ -1,0 +1,36 @@
+BOA
+	[Ubuntu下boa服务器的配置与搭建](https://www.cnblogs.com/jasonxiang/archive/2012/10/17/ubuntu_boa.html)
+	大佬写的项目实战  https://blog.csdn.net/a642960662/article/category/6818637
+Apache CGI
+	sudo apt-get install apache2
+	[ubuntu 下搭建cgi环境](https://blog.csdn.net/heibaiyijing/article/details/8538413)
+CCGI
+	**CGIC**的主站点： [http://www.boutell.com/cgic/]
+	配置参考大佬博客：[项目实战](https://blog.csdn.net/a642960662/article/category/6818637)
+	我在调试中遇到的问题也在大佬的博客下面做了 **评论** ，如果大家碰到问题可以参考一下。
+MySQL
+	安装MySQL数据库
+	sudo apt-get update
+	sudo apt-get install mysql-server
+
+	确认是否安装成功
+	sudo netstat -tap | grep mysql
+	当mysql节点处于LISTEN状态表示启动成功
+
+	登录数据库
+	mysql -u root -p
+	或者直接在-p后面跟密码，如下
+	mysql -uroot -proot
+	再装个mysql-client, libmysqlclient-dev
+	sudo apt-get install mysql-client
+	sudo apt-get install libmysqlclient-dev
+
+	// 创建新用户test
+	create user 'test'@'localhost' identified by 'test';
+	// 给test用户所有权限
+	grant all privileges on *.*  to test@localhost identified by 'test'
+	// 刷新权限
+	flush privileges;
+
+
+遇到问题可以参考我的博客 https://blog.csdn.net/Ikaros_521

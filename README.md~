@@ -1,0 +1,9 @@
+使用到的软件和技术
+	BOA服务器，Apache，CGI，CCGI，MySQL，SQLite。C，HTML，CSS，JS，SQL
+具体功能讲解
+	1、运行BOA服务器 （来到BOA目录下的src，终端输入 sudo ./boa 启动服务）
+	2、打开浏览器，输入localhost:端口号/login.html （文件都要放在 /var/www 目录下）
+	3、登录页面，注册页面。（登录注册将表单发送给对应CGI文件，CGI文件和MySQL数据库交互（运行MySQL，建好数据库和表)，将结果输出）
+	4、登录成功后会来到 配置页面。（对相应参数进行配置，可自由发挥，同样HTML的表单发送给CGI程序，打开系统文件，写入相应参数，重启服务）
+环境搭建和配置等其他问题可以参考大佬的博客讲解
+	https://blog.csdn.net/A642960662/article/details/66473793

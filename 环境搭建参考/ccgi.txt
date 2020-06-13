@@ -1,0 +1,2 @@
+**CGIC**的主站点： [http://www.boutell.com/cgic/]
+配置参考大佬博客：[项目实战](https://blog.csdn.net/a642960662/article/category/6818637)

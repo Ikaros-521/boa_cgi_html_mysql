@@ -1,0 +1,47 @@
+.bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+#center {
+	margin: 0 auto;
+	height: 500px;
+	width: 700px;
+	text-align: center;
+	overflow: hidden;
+	padding: 20px;
+}
+
+#btn {
+	padding: 20px;
+}
+
+#Button
+{
+	width:200px;
+}
+
+#passwordeye {
+	background-color: white;
+}
+
+#passwordeye2 {
+	background-color: white;
+}
+
+.input-group
+{
+	padding:20px;
+}
+
+.footer {
+	left: 40%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+

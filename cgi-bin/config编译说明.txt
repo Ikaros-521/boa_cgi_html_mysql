@@ -1,0 +1,9 @@
+﻿ubuntu12.04
+如果是用的SQLite
+
+gcc -o login.cgi login.c sqlite3.c cgic.c -lsqlite3 -lpthread -ldl
+
+
+用的MySQL
+
+gcc -o login.cgi login.c cgic.c -lpthread -ldl -lmysqlclient

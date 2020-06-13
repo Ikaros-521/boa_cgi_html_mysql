@@ -1,0 +1,75 @@
+.box ul {
+	list-style-type: none;
+	margin:0px;
+	padding:0px;
+}
+.box li {
+	margin:7px;
+	padding:5px;
+	float:left;
+	width:250px;
+	height:120px;
+}
+
+.form-control {
+	display: inline;
+	width: 50%;
+}
+
+.banner {
+	height:50px;
+}
+
+body {
+	background-image: url(../img/config_bg.jpg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	width: 100%;
+	height: 100%;
+}
+
+#center {
+	margin: 0 auto;
+	height: auto;
+	width: 1220px;
+	text-align: center;
+	overflow: hidden;
+	padding: 30px;
+}
+
+.col-sm-2 {
+	max-width: 30%;
+}
+
+#radio_btn {
+	width: 100px;
+}
+
+#btn {
+	padding: 20px;
+}
+
+#Button
+{
+	width:200px;
+}
+
+#passwordeye {
+	background-color: white;
+}
+
+.input-group
+{
+	padding:20px;
+}
+
+.footer {
+	left: 40%;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
+
+
+
+
