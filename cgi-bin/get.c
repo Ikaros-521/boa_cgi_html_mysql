@@ -13,7 +13,6 @@
 int cgiMain(void)
 {
 	char *lenstr;
-	int fd_webdata=-1;
 
 	if(lenstr=getenv("QUERY_STRING"))
 	{
@@ -28,8 +27,6 @@ int cgiMain(void)
 	{
 		printf("<p>用p标签是解决有个报错问题， 标签中就是解析后的内容</p>");
 	}
-	//最后记得关闭文件
-	close(fd_webdata); 
 
 	return 0;
 }
