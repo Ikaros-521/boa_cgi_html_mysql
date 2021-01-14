@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>upload</title>
+	<script src="js/jquery-2.2.3.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="js/bootstrap.min.js"></script>
+	<script>
+		//文件上传ajax部分
+		function uploadFile()
+		{
+			var fd = new FormData();
+			fd.append("file", document.getElementById('file').files[0]);
+			var xhr = new XMLHttpRequest();
+			xhr.upload.addEventListener("progress", uploadProgress, false);
+			xhr.addEventListener("load", uploadComplete, false);
+			xhr.addEventListener("error", uploadFailed, false);
+			xhr.addEventListener("abort", uploadCanceled, false);
+			xhr.open("POST", "cgi-bin/upload.cgi"); //修改成自己的接口
+			xhr.send(fd);
+		}
+
+		function uploadProgress(evt)
+		{
+			if (evt.lengthComputable)
+			{
+				//var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+				//document.getElementById('progressNumber').innerHTML =   percentComplete.toString() + '%';
+			}
+			else
+			{
+				//document.getElementById('progressNumber').innerHTML = 'unable to compute';
+			}
+		}
+
+		function uploadComplete(evt)
+		{
+			/* 服务器端返回响应时候触发event事件*/
+			alert(evt.target.responseText);
+			document.getElementById('file').outerHTML = document.getElementById('file').outerHTML;
+		}
+
+		function uploadFailed(evt)
+		{
+			alert("There was an error attempting to upload the file.");
+			document.getElementById('file').outerHTML = document.getElementById('file').outerHTML;
+		}
+
+		function uploadCanceled(evt)
+		{
+			alert("The upload has been canceled by the user or the browser dropped the connection.");
+			document.getElementById('file').outerHTML = document.getElementById('file').outerHTML;
+		}
+	</script>
+</head>
+
+<body>
+	<h2>目录权限，程序权限记得都给上</h2>
+	<form method="post" enctype="multipart/form-data">
+		<input type="file" name="file" id="file"/>
+		<input type="button" value="上传" onclick="uploadFile();"/>
+	</form>
+</body>
+</html>
