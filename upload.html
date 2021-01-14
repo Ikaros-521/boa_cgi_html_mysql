@@ -28,12 +28,14 @@
 		{
 			if (evt.lengthComputable)
 			{
-				//var percentComplete = Math.round(evt.loaded * 100 / evt.total);
-				//document.getElementById('progressNumber').innerHTML =   percentComplete.toString() + '%';
+				var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+				$("#progressNumberDiv").width(percentComplete.toString() + '%');
+				document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
 			}
 			else
 			{
-				//document.getElementById('progressNumber').innerHTML = 'unable to compute';
+				$("#progressNumberDiv").width('0%');
+				document.getElementById('progressNumber').innerHTML = 'unable to compute';
 			}
 		}
 
@@ -61,8 +63,16 @@
 <body>
 	<h2>目录权限，程序权限记得都给上</h2>
 	<form method="post" enctype="multipart/form-data">
-		<input type="file" name="file" id="file"/>
-		<input type="button" value="上传" onclick="uploadFile();"/>
+		<input type="file" name="file" class="file" id="file" />
+		<div class="progress">
+			<div class="progress-bar progress-bar-success" role="progressbar"
+				aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+				style="width: 0%;" id="progressNumberDiv">
+				<span class="sr-only" id="progressNumber">--</span>
+			</div>
+		</div>
+		<br>
+		<button type="button" class="btn btn-primary" onclick="uploadFile();">上传</button>
 	</form>
 </body>
 </html>

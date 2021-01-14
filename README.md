@@ -140,3 +140,10 @@ mysql> CREATE TABLE user(username varchar(20) PRIMARY KEY,password varchar(20));
 
 
 **其余参考[GitHub](https://github.com/Ikaros-521/boa_cgi_html_mysql)或[码云](https://gitee.com/ikaros-521/boa_cgi_html_mysql)**
+
+## 补充
+### 文件上传
+前端post方式上传文件到后端 /var/www/cgi-bin 目录下
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210114163024637.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0lrYXJvc181MjE=,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210114163624243.png)
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20210114163640400.png)
