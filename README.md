@@ -22,6 +22,8 @@ https://ikaros-521.gitee.io/boa_cgi_html_mysql/login.html
 
 ajax局部刷新，这个demo链接在这 [https://gitee.com/ikaros-521/ajax_cgi/tree/master](https://gitee.com/ikaros-521/ajax_cgi/tree/master)
 
+由于本工程当时是在刚接触Boa不久就编写的，所以比较混乱，如果希望有个清晰点的demo工程进行参考，可以参考我的新文章：[Linux下 基于Boa的应用资源管理系统 SMS](https://ikaros.blog.csdn.net/article/details/121848899)，新工程的地址 [https://github.com/Ikaros-521/boa_cgi_SMS](https://github.com/Ikaros-521/boa_cgi_SMS)
+
 ## 准备环境
 
 操作系统： Ubuntu12.04 LTS
